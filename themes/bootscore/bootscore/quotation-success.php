@@ -16,7 +16,7 @@
             <div class="alert alert-success justify-center text-center" role="alert">
                 <h2>Thank You!</h2>
                 <iframe src="https://giphy.com/embed/tf9jjMcO77YzV4YPwE" width="280" height="280" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
-                <p>Your CCTV quotation has been successfully submitted. We'll get back to you shortly.</p>
+                <p>Your quotation has been successfully submitted. We'll get back to you shortly.</p>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn-primary">Back to Home</a>
             </div>
         </div>

@@ -81,7 +81,7 @@ class cctvQuotation {
                 // Display success message
                 echo "<script>alert('CCTV quotation submitted successfully');</script>";
                 // Redirect to a page after successful submission
-                echo "<script>window.location.href = '" . esc_url(home_url('/success-page/')) . "';</script>";
+                echo "<script>window.location.href = '" . esc_url(home_url('/quotation-success//')) . "';</script>";
             }
         }
     }

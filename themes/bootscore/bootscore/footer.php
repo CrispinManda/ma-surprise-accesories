@@ -80,6 +80,24 @@ defined('ABSPATH') || exit;
 
 </div><!-- #page -->
 
+
+
+<script>
+    // Wait for the DOM to be ready
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        // When the openModal element is clicked
+        document.getElementById("openModal").addEventListener("click", function() {
+            // Create a new Bootstrap modal instance
+            var myModal = new bootstrap.Modal(document.getElementById('appointmentModal'), {
+                keyboard: false
+            });
+            // Show the modal
+            myModal.show();
+        });
+    });
+</script>
+
+
 <?php wp_footer(); ?>
 
 </body>

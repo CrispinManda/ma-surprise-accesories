@@ -101,7 +101,7 @@ defined('ABSPATH') || exit;
               <a class="nav-link" href="<?php echo site_url('/sales/'); ?>">Sales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo site_url('/cctv'); ?>">Our Services</a>
+              <a class="nav-link" href="<?php echo site_url('/our-services'); ?>">Our Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo site_url('/contact-us/'); ?>">Contact Us</a>
