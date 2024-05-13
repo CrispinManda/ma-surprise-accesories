@@ -41,6 +41,11 @@
     opacity: 1;
 }
 
+.btn-primary {
+    /* color: #000; */
+    background-color: #A71895;
+    border-color: #65B530;
+}
 
 /*** Button ***/
 .btn {
@@ -50,6 +55,7 @@
 
 .btn.btn-primary {
     color: #FFFFFF;
+    /* background-color: #A71895; */
 }
 
 .btn-square {

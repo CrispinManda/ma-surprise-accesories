@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -22,7 +23,6 @@ defined('ABSPATH') || exit;
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -38,42 +38,6 @@ defined('ABSPATH') || exit;
     <?php dynamic_sidebar('top-bar'); ?>
   <?php endif; ?>  
 
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5">
-        <div class="row gx-4 d-none d-lg-flex">
-            <div class="col-lg-6 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-map-marker-alt text-white"></small>
-                    </div>
-                    <small>Location Nyeri Downtown</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-envelope-open text-white"></small>
-                    </div>
-                    <small>info@masurprise.co.ke</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-phone-alt text-white"></small>
-                    </div>
-                    <small>+254 725 552 643</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="far fa-clock text-white"></small>
-                    </div>
-                    <small>Mon - Fri : 9AM - 9PM</small>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
   <header id="masthead" class="<?= apply_filters('bootscore/class/header', 'sticky-top bg-body-tertiary'); ?> site-header">
 
     <nav id="nav-main" class="navbar <?= apply_filters('bootscore/class/header/navbar/breakpoint', 'navbar-expand-lg'); ?>">
@@ -81,39 +45,29 @@ defined('ABSPATH') || exit;
       <div class="<?= apply_filters('bootscore/class/container', 'container', 'header'); ?>">
         
         <!-- Navbar Brand -->
-        <a class="navbar-brand" href="<?= esc_url(home_url()); ?>">
-          <img src="<?= esc_url(apply_filters('bootscore/logo', get_stylesheet_directory_uri() . '/img/remove.png', 'default')); ?>" alt="<?php bloginfo('name'); ?> Logo" class="d-td-none me-2" width="300" height="500">
-          <img src="<?= esc_url(apply_filters('bootscore/logo', get_stylesheet_directory_uri() . '/assets/img/logo/logo-theme-dark.svg', 'theme-dark')); ?>" alt="<?php bloginfo('name'); ?> Logo" class="d-tl-none me-2">
-        </a>  
+          <a class="navbar-brand" href="<?= esc_url(home_url()); ?>">
+              <img src="<?= esc_url(apply_filters('bootscore/logo', get_stylesheet_directory_uri() . '/img/remove.png', 'default')); ?>" alt="<?php bloginfo('name'); ?> Logo" class="logo-large d-td-none me-2">
+              <img src="<?= esc_url(apply_filters('bootscore/logo', get_stylesheet_directory_uri() . '/assets/img/logo/logo-theme-dark.svg', 'theme-dark')); ?>" alt="<?php bloginfo('name'); ?> Logo" class="logo-small d-tl-none me-2">
+          </a>
+        <style>
+          /* Adjust logo size for large screens */
+.logo-large {
+    width: 300px; /* Set width for large screens */
+    height: auto; /* Maintain aspect ratio */
+}
 
-        <!-- Navbar Toggler -->
-        <button class="<?= apply_filters('bootscore/class/header/button', 'btn btn-outline-secondary', 'nav-toggler'); ?> <?= apply_filters('bootscore/class/header/navbar/toggler/breakpoint', 'd-lg-none'); ?> ms-1 ms-md-2 nav-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
-          <i class="fa-solid fa-bars"></i><span class="visually-hidden-focusable">Menu</span>
-        </button>
+/* Adjust logo size for small screens */
+@media (max-width: 768px) {
+    /* .logo-large {
+        display: none; 
+    } */
+    .logo-large {
+        width: 100px; /* Set width for small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
 
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <li class="nav-item">
-              <a class="nav-link" href="<?php echo site_url('/'); ?>">Home </a>
-            </li> 
-              <a class="nav-link" href="<?php echo site_url('/sales/'); ?>">Sales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo site_url('/our-services'); ?>">Our Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo site_url('/contact-us/'); ?>">Contact Us</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="<?php //echo site_url('/computer/'); ?>">Computer </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php //echo site_url('/laptops/'); ?>">Laptops </a>
-            </li> -->
-          </ul>
-        </div>
+        </style>
 
         <!-- Offcanvas Navbar -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
@@ -176,4 +130,3 @@ defined('ABSPATH') || exit;
     ?>
 
   </header><!-- #masthead -->
-

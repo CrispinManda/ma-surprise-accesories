@@ -22,7 +22,7 @@
             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icon/icon-6.png" alt="Icon">
         </div>
         <h4 class="mb-3">Commercial CCTV System</h4>
-        <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
+        <p class="mb-4">There are various types of cameras available, including dome cameras, bullet cameras, PTZ (Pan-Tilt-Zoom) cameras, and specialized cameras for specific purposes like license plate recognition or facial recognition.</p>
         <a class="btn request-quotation-btn" href="#" data-bs-toggle="modal" data-bs-target="#cctvQuotationModal">
             <i class="fa fa-arrow-right text-white me-3"></i>Quotation
         </a>
@@ -80,7 +80,7 @@
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icon/icon-8.png" alt="Icon">
                         </div>
                         <h4 class="mb-3"> Access control and Softwares</h4>
-                        <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
+                        <p class="mb-4"> Our Access control systems and software are critical components of modern security infrastructure, allowing businesses and organizations to manage and monitor access to physical spaces, information, and resources.</p>
                         <a class="btn request-quotation-btn" href="#" data-bs-toggle="modal" data-bs-target="#cctvQuotationModal">
                         <i class="fa fa-arrow-right text-white me-3"></i>Quotation
         </a>
@@ -92,7 +92,7 @@
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icon/icon-9.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Electric/Razor Fences</h4>
-                        <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
+                        <p class="mb-4">Our Electric razor fences are designed to provide a strong physical barrier while also delivering an electric shock to deter intruders from attempting to breach the perimeter.</p>
                         <a class="btn request-quotation-btn" href="#" data-bs-toggle="modal" data-bs-target="#cctvQuotationModal">
                         <i class="fa fa-arrow-right text-white me-3"></i>Quotation
         </a>
@@ -104,7 +104,7 @@
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icon/icon-3.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Office/Home Internet Installation</h4>
-                        <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
+                        <p class="mb-4">Our Office and home internet installation involve setting up the necessary infrastructure to connect to the internet reliably and securely.</p>
                         <a class="btn request-quotation-btn" href="#" data-bs-toggle="modal" data-bs-target="#cctvQuotationModal">
                         <i class="fa fa-arrow-right text-white me-3"></i>Quotation
         </a>

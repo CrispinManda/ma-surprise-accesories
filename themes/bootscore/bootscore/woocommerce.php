@@ -33,12 +33,19 @@ get_header();
   }
 </style>
 
+<div class="container mt-5">
+<form class="searchform input-group" method="get" action="<?= esc_url(home_url('/')); ?>">
+  <input type="text" name="s" class="form-control" placeholder="<?php _e('Search', 'bootscore'); ?>">
+  <button type="submit" class="input-group-text btn btn-outline-secondary"><i class="fa-solid fa-magnifying-glass"></i><span class="visually-hidden-focusable">Search</span></button>
+</form>
+</div>
+
 
 <div id="content" class="site-content  <?= apply_filters('bootscore/class/container', 'container', 'woocommerce'); ?> <?= apply_filters('bootscore/class/content/spacer', 'pt-3 pb-5', 'woocommerce'); ?>">
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
 
-<div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-bs-ride="carousel">
+<div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="carousel-content">
